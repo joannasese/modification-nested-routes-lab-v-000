@@ -8,6 +8,7 @@ module ArtistsHelper
       select_tag "song[artist_id]", options_from_collection_for_select(Artist.all, :id, :name)
     else
       # hidden_field_tag "song[artist_id]", song.artist.id
+      binding.pry
       artist.name
     end
   end
